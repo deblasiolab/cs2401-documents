@@ -1,0 +1,483 @@
+%% adapted from Chris Bourke's syllabus template for CS 1
+%% https://github.com/cbourke/ComputerScienceI
+%% Accessed on 29 July 2020
+%% Used and distributed under the CC BY-SA 4.0 License
+
+\documentclass[12pt]{scrartcl}
+
+\usepackage{epsfig,amssymb}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{multirow}
+\usepackage{colortbl} 
+\usepackage{xspace}
+\usepackage[normalem]{ulem}
+
+\usepackage{tcolorbox}
+
+\definecolor{steelblue}{RGB}{70, 130, 180}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\usepackage{hyperref}
+\hypersetup{
+  letterpaper,
+  colorlinks,
+  linkcolor=darkgreen,
+  citecolor=darkgreen,
+  menucolor=darkred,
+  urlcolor=blue,
+  pdfpagemode=none,
+  pdftitle={Syllabus},
+  pdfauthor={Dan DeBlasio},
+  pdfkeywords={}
+}
+\setcounter{tocdepth}{2}
+
+\usepackage{fullpage}
+\usepackage{tikz}
+\pagestyle{empty} %
+\usepackage{subfigure}
+\usepackage{enumitem}
+\setenumerate{nolistsep}
+\setitemize{nolistsep}
+\renewcommand{\labelenumii}{\alph{enumii}.}
+
+\definecolor{MyDarkBlue}{rgb}{0,0.08,0.45}
+\definecolor{MyDarkRed}{rgb}{0.45,0.08,0}
+\definecolor{MyDarkGreen}{rgb}{0.08,0.45,0.08}
+
+
+\setlength{\parindent}{0pt} %
+\setlength{\parskip}{.25cm}
+
+\usepackage{lastpage}
+
+\usepackage{fancyhdr}
+\renewcommand*{\titlepagestyle}{fancy}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\lhead{~}
+\chead{~}
+\rhead{~}
+\lfoot{\Title/DeBlasio -- Syllabus}
+\cfoot{~}
+\rfoot{\thepage\ / \pageref*{LastPage}}
+
+\makeatletter
+\title{Elementary Data Structures and Algorithms}\let\Title\@title
+\subtitle{
+{\small
+\vskip0.5cm
+Dr. Dan DeBlasio\\
+Department of Computer Science \\
+University of Texas at El Paso}
+\vskip-1cm}
+\date{\small CS 2401 -- Spring 2020}
+\makeatother
+
+%\newcommand{\change}[2]{\sout{#1}\xspace\textcolor{orange}{#2}}
+\newcommand{\change}[2]{#2}
+
+
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{General Information}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Course Objectives:} This is the second course for students majoring in Computer Science. Students will learn about fundamental computing algorithms including searching and sorting; recursion; elementary abstract data types including linked lists, stacks, queues and trees; and elementary algorithm analysis. 
+
+\paragraph{Prerequisite:} CS 1301 and CS 1101 with a grade of C or better in both. 
+
+\paragraph{Knowledge and Abilities Required Before Entering the Course:} Students are assumed to be comfortable programming in Java. Students should be able to code basic arithmetic expressions, define simple classes, use strings, code loops and conditional statements, write methods, create objects from classes, invoke methods on an object, perform basic text file input and output, and use arrays.
+
+\paragraph{Topics covered this semester:}
+\begin{itemize} 
+\item Review and deeper study of arrays, objects, linked lists, and recursion. 
+\item Introduction to algorithm analysis and rigorous study of searching and sorting algorithms. 
+\item New data structures: binary trees (including binary search trees), stacks, and queues, along with their implementations. 
+\end{itemize}
+
+\clearpage
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Logistics}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Synchronous course session times:}
+\begin{itemize}
+\item MW 10:30a-11:50p (class)
+\item MW 12:00p-1:20p (lab)
+\end{itemize}
+
+\paragraph{Textbook:} CS2401: Elementary Data Structures / Algorithms, by Zybooks (cost: \$77), available at zybooks.zyante.com. To subscribe to your textbook, please enter the following code: 
+\begin{center}
+\textbf{\Large UTEPCS2401Fall2020}
+\end{center}
+choose section: CS2401-DeBlasio 
+
+
+\paragraph{Communication platforms:}
+\change{}{\begin{itemize}
+\item \textbf{Blackboard} -- \url{cs2401.deblasiolab.org/f20/blackboard}  -- Used for synchronous class sessions, test, quizzes, and announcements. All official grades and feedback will be sent through Blackboard. Students should monitor this site for important class information. 
+\item \textbf{MS Teams} -- \url{cs2401.deblasiolab.org/f20/teams}  -- Used for office hours and intra-class discussions. Several channels will be available in the team for asking and answering questions, the instructional staff will answer questions posted on teams, but other students are encouraged to provide feedback as well. 
+\item \textbf{Github} -- \url{cs2401.deblasiolab.org/f20/github}  -- Used for lab assignments. Links to assignments will be posted on blackboard, students are responsible for ensuring that assignments are committed correctly before the deadline. 
+\item \textbf{YouTube} -- \url{cs2401.deblasiolab.org/f20/youtube} -- Used to disseminate asynchronous video content. Students will keep up with assigned video content intended to supplement the textbook readings.
+\end{itemize}}
+
+\paragraph{Software: } 
+\change{}{Students will be required to use a java compiler with the \texttt{JUnit} package installed as well as \texttt{git} for the submission of assignments. 
+An Interactive Development Environment (IDE) can also be utilized. The instructional staff will be available to assist with the installation and use of both \texttt{eclipse} and \texttt{intellij}. 
+All of this software is available for free from the respective developers, and is } available on the desktop computers in the main computer lab and in the two instructional labs on the first floor. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Instructional Staff}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{instructor}
+\begin{tabular}{lrl}
+Dr. Dan DeBlasio  
+ & email: & dfdeblasio@utep.edu\\
+ & chat on MS Teams: &  \url{teamsChat.deblasiolab.com}\\
+ & office: & CCSB 3.1008\\
+\hspace{2em} Office Hours& MR 2:00p-3:00p & \url{cs2401.deblasiolab.org/f20/officehours/deblasio}\\
+& & (or \#OfficeHoursDeBlasio on the class team)\\
+& appointments: & \url{calendly.deblasiolab.org}\\
+\end{tabular}
+
+\subsection{Teaching Assistant}
+\begin{tabular}{lrl}
+\color{red}My TA's Name  
+ & email: & blah@miners.utep.edu\\
+\hspace{2em} Office Hours& TBD & \url{cs2401.deblasiolab.org/f20/officehours/TA}\\
+& & (or \#OfficeHoursTA on the class team)\\
+\end{tabular}
+
+\subsection{Instructional Assistants}
+
+\begin{tabular}{lrl}
+\color{red}My IA's Name  
+ & email: & blah@miners.utep.edu\\
+\hspace{2em} Office Hours& TBD & \url{cs2401.deblasiolab.org/f20/officehours/IA}\\
+& & (or \#OfficeHoursIA on the class team)\\
+
+\color{red}My IA's Name  
+ & email: & blah@miners.utep.edu\\
+\hspace{2em} Office Hours& TBD & \url{cs2401.deblasiolab.org/f20/officehours/IA}\\
+& & (or \#OfficeHoursIA on the class team)\\
+\end{tabular}
+
+\subsection{Peer Leader}
+
+\begin{tabular}{lrl}
+\color{red}My PL's Name  
+ & email: & blah@miners.utep.edu\\
+\hspace{2em} Office Hours& TBD & \url{cs2401.deblasiolab.org/f20/officehours/PL}\\
+& & (or \#OfficeHoursPL on the class team)\\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Expectations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\paragraph{Communication:} Students are expected to consult their emails and blackboard messages \textit{at least} twice a week, and to answer these as relevant. 
+
+\paragraph{Class and Lab Participation:} \change{Attendance }{Keeping up with asynchronous content} and participation in all \change{lecture}{synchronous class} and lab sessions are critical factors of your success in this course. 
+
+\textit{Students should be on time for all scheduled sessions and attend the entire session.} 
+Attendance will be taken at every \change{}{synchronous class and lab} session \change{(at first you will have to sign in but as time goes the instructor will know you and mark you present without your help)} and will count towards your class participation grade. 
+
+\textit{Students should be on task.} 
+When in \change{lecture}{synchronous class} or lab session, students are expected to direct their attention to the task / activity as directed by the lecture / lab instructor. 
+For instance, \change{lecture and lab}{synchronous class} sessions are certainly not places for social-networking, working on homework, checking courses.
+
+\textit{Professionalism:} 
+Students should notify the instructor prior to missing a session if at all possible, and certainly right after if earlier was not possible. 
+The instructor will allow two unexcused absences per semester before having the option to deduct points from the final grade (5 points per subsequent unexcused absence). 
+Students should submit their work on time and meet all deadlines. Failing to do so will affect the participation grade.
+
+\textit{It is the student's responsibility to \change{obtain}{review} the content covered during missed class(es) or labs, as well as the assignments given during their absence.} 
+Participation points also include completing post-lecture and post-labs online quizzes (when requested) that are administered as surveys to monitor students’ overall progress and potential struggles.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Grading}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Grades are communicated to students in a timely manner. 
+It is the students’ responsibility to keep track of their grades by compiling the grades they receive. 
+Your semester grade will be based on a combination of homework assignments, weekly quizzes, class participation, 3 mid-term exams, student engagement, and a final exam. 
+The approximate percentages are as follows:
+\begin{center}
+\begin{tabular}{rl}
+\textbf{3\% } & Class participation \\
+\textbf{15\% } & Homework/Quizzes/In-class assignments grade\\
+\textbf{35\% } & Lab grade\\
+\textbf{12\% } & Mid-term exams (3 mid-term exams) \\
+\textbf{35\% } & Final exam\\
+\end{tabular}
+\end{center}
+The base percentage-score-to-letter-grade conversion for CS 2401 is as follows: 
+\change{}{
+\begin{center}
+\begin{tabular}{rl}
+\textbf{90\%}& or higher is guaranteed an A \\
+\textbf{80\%}& or higher is guaranteed a B \\
+\textbf{70\%}& or higher is guaranteed a C \\
+\textbf{60\%}& or higher is guaranteed a D \\
+\textbf{}& all lower grades are an F 
+\end{tabular}
+\end{center}
+These minimums may be lowered without notice but will not be raised. 
+}
+
+Note: Regardless of your standing in the class at that time, you need to earn a C or better at the final exam to pass the course as well as a C or better as your average grade on the lab assignments. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Homework / Quizzes / In-class assignments}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Quizzes}
+The purpose of each quiz is to ensure that students are staying current with the weekly reading assignments and to verify that they have acquired the skills developed in class. 
+Quizzes are unannounced. 
+\change{}{All quizzes will be on blackboard, and there will be no make-up on missed quizzes.} 
+
+\textbf{Important note on quizzes:} 
+There will be 2 long quizzes during the semester, whose grades will count towards the HW/Quizzes/in-class assignment portion of your final grade. 
+They will be announced, there will be no make-up on these quizzes and they will cover specific skills for which the students can prepare by being diligent on their course work, completing their online homework, and working on codingbat.com. 
+
+
+\subsubsection{In-class assignments}
+There will be unannounced in-class assignments, to be turned in either by the end of the class or within a short period of time after the class (details will be given for each assignment). 
+There will be no make-up for missed in-class assignments. 
+Grades of such assignments will weigh equally with grades from online quizzes. 
+
+\subsubsection{Online Homework} 
+You should expect to spend at least four hours per week outside of lecture on reading and homework. You should plan to devote extra four hours on your lab assignments. 
+Most of your homework will be work assigned on your online zybook: 
+all deadlines are available in advance on your zybook so that you can plan ahead. 
+Completing the assigned activities on time will be crucial to your success in the class (since these activities prepare you for classwork and exams). 
+Reading and homework assignments to be completed on your online textbook are usually meant to familiarize you with concepts that will be covered in depth in class. 
+If you struggle in any way while working on these, it is crucial that you seek help as soon as possible.
+\change{Reading and}{Additional} homework assignments will be announced in class and/or posted on blackboard (under the Timeline section of Resources).
+If you miss a \change{lecture}{synchronous class} session, it is your responsibility to find out what you missed, including assignments that might have been given\change{ in class}.
+
+
+\paragraph{Online homework grade:} at each deadline, your instructor will collect your progress towards the due assignment. 
+The \% of completion you have achieved will be used to compute your grade on this particular homework. 
+
+\paragraph{Extra-credit opportunities:} 
+You will be given several opportunities to collect extra credit, to be applied to your homework grade (not to exceed an overall homework grade of 100\% on the online homework portion of your grade). 
+These opportunities will be clearly indicated in the list of deadlines in your online textbook. 
+There are three types of extra credit opportunities: catch-up homework, review homework, extra work, and professionalism.
+\begin{itemize}
+\item Catch-up homework assignments are regularly scheduled during the semester and are meant to help you make up some of the points you may not have made by the deadline of each individual homework assignment. 
+\item Review homework: is a one-time opportunity. If you complete at least 75\% of the Review homework assignment due on \change{March 6th}{\textcolor{red}{date TBD}}, you will receive 20 extra points to count towards your online homework grade (not to exceed 100 points total).
+\item Extra work: is also a one-time opportunity. If you complete at least 80\% of the Debugging and troubleshooting homework assignment due on \change{February 15th}{\textcolor{red}{date TBD}}, you will receive 15 extra points to count towards your homework grade (not to exceed 100 points total).
+\item Professionalism: if all online homework was consistently completed on time, an extra 100 points will be assigned to the average making up the HW/Q/IC grade.
+\end{itemize}
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!75!black,title=HW / Quizzes / In-Class Assignments Grade (HW/Q/IC)]
+\begin{center}
+Average (Online HW grade, Quizzes grade, Long Quiz 1, Long Quiz 2, \\ other in-class assignments)\\
+\end{center}
+\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Lab assignments and related homework}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Lab assignments are designed for you to further your practice on the concepts presented in class and demonstrate your level of mastery of these. 
+In lab, you will typically work on either small activities related to currently covered concepts or concepts in which your instructional team thinks you should acquire more fluency, or more substantial lab assignments. 
+Specifically, there will be \change{7 or 8 longer}{approximately one} lab assignments \change{}{per week} and a few smaller lab activities. 
+Online homework that is specific to the lab activities will be assigned: you will notice two assignments listed on your online zybook are labeled “Lab HW”. 
+Your completion of these will count towards your lab grade. 
+
+\paragraph{Other activities:} in lab, once a week on most weeks, you will participate in group-work during which you will solve problems\change{ (offline: at the white board)}. 
+You are expected to take an active part in these activities.
+
+\paragraph{Attendance and active participation:} You are expected to attend and actively participate in labs (active participation includes the weekly group activities). 
+Attendance will be taken and will count towards your overall standing in the class.
+
+Extra credit opportunity: there will be two extra-credit opportunities: 
+\begin{itemize}
+\item One in the form of an extra lab = one extra grade towards the lab assignment average; and 
+\item One for those who attended all labs (except for a maximum of 2 absences excused ahead of time) and submitted all of their labs on time = 100 extra points towards the lab assignments average.
+\end{itemize}
+
+\paragraph{Grade:} Your grade for labs will be a combination of the grades you obtain at your lab assignments (80\%), your participation and performance on smaller activities, as well as your active participation in the problem-solving group activities (15\%), and finally, your homework completion (5\%). 
+This grade will weigh 35\% of your overall CS2401 grade. 
+You need to score 70\% or higher in labs to pass CS2401, regardless of your average otherwise.
+
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!75!black,title=Lab Grade]
+\begin{center}
+
+Lab assignments (92\%) + \\
+Attendance/Active Participation (3\%) +\\
+ Lab HW (5\%)
+\end{center}
+
+\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Exams}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+There will be 3 midterm exams and one final exam. 
+Because the exams contribute heavily to your total grade, it is vital that you do well on them. 
+If you have test-taking difficulties in general, or if you have difficulties with our tests in particular, please request appropriate accommodation from UTEP’s Center for Accommodation and Students’ Services.
+
+The purpose of the midterm exams is to allow you to demonstrate mastery of course concepts covered thus far during the semester (hence each exam is comprehensive). 
+Mid-term exams will take place \change{during the regular lecture sessions}{on backboard with clear time constraints} and are tentatively scheduled to be held on week 6, week 11, and week 14. 
+Make-up exams will be given only in extremely unusual circumstances. 
+If you must miss an exam, please meet with an instructor, \textit{BEFORE} the exam. 
+The average of the 3 midterm grades is worth 12\% of your overall grade for CS2401.
+ 
+\paragraph{Extra-credit opportunity:} 
+for those students with perfect attendance (i.e., except for up to 2 absences excused ahead of time), a perfect grade of 100 will be added to the average making up the midterm exams grade.
+
+\textbf{\underline{The final exam will be comprehensive.}}
+You must score 70\% or better on the final exam to pass this course. 
+You must take the final exam during the time shown in the schedule for the lecture section that you normally attend. 
+Do not "drop in" to another section: there will not be a copy of the exam for you. 
+This is University policy. If you have a scheduling conflict (e.g., if you are taking a final at EPCC) or if you are scheduled for three final exams in one day, see your instructor at least a week in advance for arranging accommodation.
+ The final exam will be held on {\color{red}XXX from XXXX}. (all final exams schedules are also available online, on the UTEP website). 
+ It is the students’ responsibility to keep informed. The final exam is worth 35\% of your overall grade. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Standing in the course}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Special Assignments:} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\change{will be given to students i}{I}f deemed necessary, \change{which will need to be completed}{special assignments will be given to students} to ensure that said students remain in the class and be successful. 
+These will be designed to help students grow into the course and develop the necessary skills.
+It is important that students feel free to ask their instructor about any such opportunity as well so that a special plan of development for CS2401 be tailored to them.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Standing in the Course:} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Students will have access to their grades for all assignments so that they can self-monitor their standing and progress. 
+However, it is also completely fine for any student to come and talk to their instructor about their standing and work together to make sure the student is as successful as can be.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Dropping the Course:} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Every semester, some students drop the course. We, instructors, completely understand and respect that. We only hereby ask students to inform us, ideally before, but in the worst-case right after, of their intention to drop the course. This is really important for us as it possibly informs us of ways in which to better serve our students.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Resources}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Special Accommodations: }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+If you have a disability and need classroom accommodations, please contact the Center for Accommodations and Support Services (CASS) at 747-5148 or by email to cass@utep.edu, or visit their office located in UTEP Union East, Room 106. For additional information, please visit the CASS website at www.sa.utep.edu/cass. CASS’ staff are the only individuals who can validate and if need be, authorize accommodations for students with disabilities.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Scholastic Dishonesty: }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Any student who commits an act of scholastic dishonesty is subject to discipline. Scholastic dishonesty includes, but not limited to cheating, plagiarism, collusion, and submission for credit of any work or materials that are attributable to another person.
+
+Cheating is:
+\begin{itemize}
+\item Copying from the test paper of another student
+\item Communicating with another student during a test to be taken individually
+\item Giving or seeking aid from another student during a test to be taken individually
+\item Possession and/or use of unauthorized materials during tests (i.e. crib notes, class notes, books, etc.)
+\item Substituting for another person to take a test
+\item Falsifying research data, reports, academic work offered for credit
+\end{itemize}
+
+Plagiarism is:
+\begin{itemize}
+\item Using someone’s work in your assignments without the proper citations
+\item Submitting the same paper or assignment from a different course, without direct permission of instructors
+\item[]\vspace{1em} To avoid plagiarism, see: \\{\footnotesize\url{https://www.utep.edu/student-affairs/osccr/_Files/docs/Avoiding-Plagiarism.pdf}}
+\end{itemize}
+                               
+Collusion is:
+\begin{itemize}
+\item Unauthorized collaboration with another person in preparing academic assignments
+\end{itemize}
+
+\begin{tcolorbox}[colback=red!5,colframe=red!75!black,title=Important!]
+When in doubt on any of the above, please contact your instructor to check if you are following authorized procedure. Also, please check the UTEP’s Handbook of Operating Procedures at: hoop.utep.edu. 
+\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Detailed Learning Outcomes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Level 1: Knowledge and Comprehension}
+Level 1 outcomes are those in which the student has been exposed to the terms and concepts at a basic level and can supply basic definitions. On successful completion of this course, students will be able to:
+\begin{enumerate}
+   \item Explain the concept of polymorphism
+\end{enumerate}
+
+\subsection*{Level 2: Application and Analysis}
+Level 2 outcomes are those in which the student can apply the material in familiar situations, e.g., can work a problem of familiar structure with minor changes in the details. Upon successful completion of this course, students will be able to:
+\begin{enumerate}
+    \item Describe, implement, and use the following concepts:
+    \begin{enumerate}
+        \item classes, subclasses, and inheritance
+        \item encapsulation and information hiding
+    \end{enumerate}
+    
+    \item Describe, implement, and use the following algorithms:
+    \begin{enumerate}
+        \item sequential and binary search
+        \item quadratic and O(n log n) sorting
+        \item string manipulation and parsing
+    \end{enumerate}
+    
+    \item Describe and trace computer representation and memory allocation of:
+    \begin{enumerate}
+        \item integers, real numbers, arrays and objects
+        \item methods, including recursive methods and the use of activation records
+    \end{enumerate}
+    
+    \item Use basic notions of algorithm complexity:
+    \begin{enumerate}
+        \item use Big-O notation to express the best-, average- and worst-case behaviors of an algorithm
+        \item determine the best, average and worst-case behaviors of a simple algorithm
+    \end{enumerate}
+    
+    \item Use recursion and iteration as problem solving techniques
+\end{enumerate}
+
+\subsection*{Level 3: Synthesis and Evaluation}
+Level 3 outcomes are those in which the student can apply the material in new situations. This is the highest level of mastery. On successful completion of this course, students will be able to identify, implement and use the following data structures as appropriate for a given problem:
+\begin{enumerate}
+    \item Design and implement solutions to computational problems using the following data structures:
+    \begin{enumerate}
+        \item multi-dimensional arrays;
+        \item lists implemented as arrays or linked lists;
+        \item stacks;
+        \item queues;
+        \item binary trees and binary search trees.
+    \end{enumerate}
+\end{enumerate}
+
+
+
+\end{document}
