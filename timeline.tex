@@ -1,0 +1,121 @@
+%% adapted from Chris Bourke's syllabus template for CS 1
+%% https://github.com/cbourke/ComputerScienceI
+%% Accessed on 29 July 2020
+%% Used and distributed under the CC BY-SA 4.0 License
+
+\documentclass[12pt, landscape]{scrartcl}
+\usepackage[margin=0.in]{geometry}
+
+\usepackage{epsfig,amssymb}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{multirow}
+\usepackage{colortbl} 
+\usepackage{xspace}
+\usepackage[normalem]{ulem}
+
+\usepackage{tcolorbox}
+
+\definecolor{steelblue}{RGB}{70, 130, 180}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\usepackage{hyperref}
+\hypersetup{
+  letterpaper,
+  colorlinks,
+  linkcolor=darkgreen,
+  citecolor=darkgreen,
+  menucolor=darkred,
+  urlcolor=blue,
+  pdfpagemode=none,
+  pdftitle={Syllabus},
+  pdfauthor={Dan DeBlasio},
+  pdfkeywords={}
+}
+\setcounter{tocdepth}{2}
+
+\usepackage{fullpage}
+\usepackage{tikz}
+\pagestyle{empty} %
+\usepackage{subfigure}
+\usepackage{enumitem}
+\setenumerate{nolistsep}
+\setitemize{nolistsep}
+\renewcommand{\labelenumii}{\alph{enumii}.}
+
+\definecolor{MyDarkBlue}{rgb}{0,0.08,0.45}
+\definecolor{MyDarkRed}{rgb}{0.45,0.08,0}
+\definecolor{MyDarkGreen}{rgb}{0.08,0.45,0.08}
+
+\renewcommand*{\titlepagestyle}{empty}
+\setlength{\parindent}{0pt} %
+\setlength{\parskip}{.25cm}
+%
+%\usepackage{lastpage}
+%
+%\usepackage{fancyhdr}
+%\renewcommand*{\titlepagestyle}{fancy}
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0.0pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+%
+%\lhead{~}
+%\chead{~}
+%\rhead{~}
+%\lfoot{\Title/DeBlasio -- Timeline}
+%\cfoot{~}
+%\rfoot{\thepage\ / \pageref*{LastPage}}
+
+\makeatletter
+\title{\vskip-2cm\large Elementary Data Structures and Algorithms}\let\Title\@title
+\subtitle{
+{\small
+Dr. Dan DeBlasio\\
+Department of Computer Science\\
+University of Texas at El Paso}
+\vskip-1cm}
+\date{\small CS 2401 -- Spring 2020}
+\makeatother
+
+%\newcommand{\change}[2]{\sout{#1}\xspace\textcolor{orange}{#2}}
+\newcommand{\change}[2]{#2}
+
+
+\begin{document}
+\maketitle
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{module} & \textbf{week} & \textbf{topics} & \textbf{book sections/zybook homework}\\
+\hline
+\hline
+\multirow{4}{5em}{\rotatebox[origin=c]{0}{\small Fundamentals}} 
+& 1 & 	1-D Arrays, Loops, String Manipulation &		3.1--3.4, 17.14--17.15\\
+& 2 &	Unit Testing, 2-D Arrays & 				3.5--3.9, 4.5\\
+& 3 & 	Algorithm Analysis of Loops, Methods & 		5.4--5.5, 6.1--6.3\\
+& 4 &	Midterm Exam 1 & 						Catch-Up Homework\\
+\hline
+\hline
+\multirow{2}{5em}{\rotatebox[origin=c]{0}{\small Algorithms}}
+& 5 &	Recursion, Binary Search & 				5.1--5.3, 6.1--6.3\\
+& 6 & 	Sorting & 								5.9--5.20\\
+\hline
+\hline
+\multirow{7}{7em}{\rotatebox[origin=c]{0}{\small Data Structures}}
+& 7 & 	Linked Lists & 							11.1--11.10\\
+& 8 & 	Midterm Exam 2 & 						Catch-Up Homework\\
+& 9 & 	Inheritance, Doubly Linked Lists & 			10.1--10.3, 11.11--11.15\\
+& 10 & 	Trees, Binary Trees, Binary Search Trees & 	12.1--12.6\\
+& 11 & 	Stacks, Queues & 						13.1--13.6\\
+& 12 & 	Stack \& Queue Implementation &			\\
+& 13 & 	Midterm Exam 3 & 						Catch-Up Homework\\
+\hline
+\multicolumn{4}{c}{\vspace{-1.1em}} \\
+\cline{2-4}
+\multicolumn{1}{c|}{} & 14 & 	Miscellaneous &						 \\
+\multicolumn{1}{c|}{} & 15 & 	Final Exam Review & 					 \\
+\cline{2-4}
+\end{tabular}
+\end{document}
