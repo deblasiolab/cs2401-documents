@@ -70,11 +70,11 @@ Dr. Dan DeBlasio\\
 Department of Computer Science \\
 University of Texas at El Paso}
 \vskip-1cm}
-\date{\small CS 2401 -- Spring 2020}
+\date{\small CS 2401 -- Fall 2020\\ \vspace{1em}Revised: \today\\(changed marked \change{}{in orange} since initial posting)}
 \makeatother
 
-%\newcommand{\change}[2]{\sout{#1}\xspace\textcolor{orange}{#2}}
-\newcommand{\change}[2]{#2}
+\newcommand{\change}[2]{\xspace\textcolor{orange}{#2}}
+%\newcommand{\change}[2]{#2}
 
 
 \tagpdfifpdftexT
@@ -90,9 +90,9 @@ University of Texas at El Paso}
 
 \maketitle
 
-\begin{center}
-{\Huge\color{red}DRAFT}
-\end{center}
+%\begin{center}
+%{\Huge\color{red}DRAFT}
+%\end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{General Information}
@@ -143,17 +143,17 @@ choose section: CS2401-DeBlasio
 
 
 \paragraph{Communication platforms:}
-\change{}{\begin{itemize}
+\begin{itemize}
 \item \textbf{Blackboard} -- \url{cs2401.deblasiolab.org/f20/blackboard}  -- Used for synchronous class sessions, test, quizzes, and announcements. All official grades and feedback will be sent through Blackboard. Students should monitor this site for important class information. 
 \item \textbf{MS Teams} -- \url{cs2401.deblasiolab.org/f20/teams}  -- Used for office hours and intra-class discussions. Several channels will be available in the team for asking and answering questions, the instructional staff will answer questions posted on teams, but other students are encouraged to provide feedback as well. 
 \item \textbf{Github} -- \url{cs2401.deblasiolab.org/f20/github}  -- Used for lab assignments. Links to assignments will be posted on blackboard, students are responsible for ensuring that assignments are committed correctly before the deadline. 
 \item \textbf{YouTube} -- \url{cs2401.deblasiolab.org/f20/youtube} -- Used to disseminate asynchronous video content. Students will keep up with assigned video content intended to supplement the textbook readings.
-\end{itemize}}
+\end{itemize}
 
 \paragraph{Software: } 
-\change{}{Students will be required to use a java compiler with the \texttt{JUnit} package installed as well as \texttt{git} for the submission of assignments. 
-An Interactive Development Environment (IDE) can also be utilized. The instructional staff will be available to assist with the installation and use of both \texttt{eclipse} and \texttt{intellij}. 
-All of this software is available for free from the respective developers, and is } available on the desktop computers in the main computer lab and in the two instructional labs on the first floor. 
+Students will be required to use a java compiler with the \texttt{JUnit} package installed as well as \texttt{git} for the submission of assignments. 
+An Interactive Development Environment (IDE) can also be utilized. The instructional staff will be available to assist with the installation and use \texttt{eclipse}, \texttt{intellij}, or the online \texttt{repl.it}(experimental). 
+All of this software is available for free from the respective developers, and is available on the desktop computers in the main computer lab and in the two instructional labs on the first floor of CCSB. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Instructional Staff}
@@ -165,8 +165,8 @@ Dr. Dan DeBlasio
  & email: & dfdeblasio@utep.edu\\
  & chat on MS Teams: &  \url{cs2401.deblasiolab.org/dm} (direct message)\\
  & office: & CCSB 3.1008\\
-\hspace{2em} Office Hours& MR 2:00p-3:00p & \url{cs2401.deblasiolab.org/f20/officehours/deblasio}\\
-& & [or ``Office Hours (DeBlasio)'' on the class team]\\
+\hspace{2em} Office Hours& MR 2:00p-3:00p & \url{cs2401.deblasiolab.org/f20/officehours}\\
+& & [or ``Office Hours'' on the class team]\\
 & appointments: & \url{calendly.deblasiolab.org}\\
 \end{tabular}
 
@@ -174,8 +174,8 @@ Dr. Dan DeBlasio
 \begin{tabular}{lrl}
 Ivan Gastelum
  & email: & igastelum@miners.utep.edu\\
-\hspace{2em} Office Hours& TBD & \url{cs2401.deblasiolab.org/f20/officehours/gastelum}\\
-& & [or ``Office Hours (Gastelum)'' on the class team]\\
+\hspace{2em} Office Hours& \change{TBD}{M 3:00p-5:00p} & \url{cs2401.deblasiolab.org/f20/officehours}\\
+& \change{}{W 2:00p-4:00p} & [or ``Office Hours' on the class team]\\
 \end{tabular}
 
 \subsection{Instructional Assistants}
@@ -183,13 +183,13 @@ Ivan Gastelum
 \begin{tabular}{lrl}
 Seth Flores
  & email: & saflores8@miners.utep.edu\\
-\hspace{2em} Office Hours& TBD & \url{cs2401.deblasiolab.org/f20/officehours/flores}\\
-& & [or ``Office Hours (Flores)'' on the class team]\\
+\hspace{2em} Office Hours& \change{TBD}{TR 6:00p-8:00p} & \url{cs2401.deblasiolab.org/f20/officehours}\\
+& & [or ``Office Hours'' on the class team]\\
 
 Carlo Alvarado  
  & email: & caalvarado7@miners.utep.edu\\
-\hspace{2em} Office Hours& TBD & \url{cs2401.deblasiolab.org/f20/officehours/alvarado}\\
-& & [or ``Office Hours (Alvarado)'' on the class team]\\
+\hspace{2em} Office Hours& \change{TBD}{MW 8:30a-10:30a} & \url{cs2401.deblasiolab.org/f20/officehours}\\
+& & [or ``Office Hours'' on the class team]\\
 \end{tabular}
 
 \subsection{Peer Leader}
@@ -197,8 +197,8 @@ Carlo Alvarado
 \begin{tabular}{lrl}
  Alec Tellez Berkowitz 
  & email: & atelleztor@miners.utep.edu\\
-\hspace{2em} Office Hours& TBD & \url{cs2401.deblasiolab.org/f20/officehours/berkowitz}\\
-& & [or ``Office Hours (Berkowitz)'' on the class team]\\
+\hspace{2em} Office Hours& \change{TBD}{F 2:00p-4:00p} & \url{cs2401.deblasiolab.org/f20/officehours}\\
+& & [or ``Office Hours'' on the class team]\\
 \end{tabular}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -207,21 +207,21 @@ Carlo Alvarado
 
 \paragraph{Communication:} Students are expected to consult their emails and blackboard messages \textit{at least} twice a week, and to answer these as relevant. 
 
-\paragraph{Class and Lab Participation:} \change{Attendance }{Keeping up with asynchronous content} and participation in all \change{lecture}{synchronous class} and lab sessions are critical factors of your success in this course. 
+\paragraph{Class and Lab Participation:} Keeping up with asynchronous content and participation in all synchronous class and lab sessions are critical factors of your success in this course. 
 
 \textit{Students should be on time for all scheduled sessions and attend the entire session.} 
-Attendance will be taken at every \change{}{synchronous class and lab} session \change{(at first you will have to sign in but as time goes the instructor will know you and mark you present without your help)} and will count towards your class participation grade. 
+Attendance will be taken at every synchronous class and lab session and will count towards your class participation grade. 
 
 \textit{Students should be on task.} 
-When in \change{lecture}{synchronous class} or lab session, students are expected to direct their attention to the task / activity as directed by the lecture / lab instructor. 
-For instance, \change{lecture and lab}{synchronous class} sessions are certainly not places for social-networking, working on homework, checking courses.
+When insynchronous class or lab session, students are expected to direct their attention to the task / activity as directed by the lecture / lab instructor. 
+For instance, synchronous class sessions are certainly not places for social-networking, working on homework, checking courses.
 
 \textit{Professionalism:} 
 Students should notify the instructor prior to missing a session if at all possible, and certainly right after if earlier was not possible. 
 The instructor will allow two unexcused absences per semester before having the option to deduct points from the final grade (5 points per subsequent unexcused absence). 
 Students should submit their work on time and meet all deadlines. Failing to do so will affect the participation grade.
 
-\textit{It is the student's responsibility to \change{obtain}{review} the content covered during missed class(es) or labs, as well as the assignments given during their absence.} 
+\textit{It is the student's responsibility to review the content covered during missed class(es) or labs, as well as the assignments given during their absence.}
 Participation points also include completing post-lecture and post-labs online quizzes (when requested) that are administered as surveys to monitor students’ overall progress and potential struggles.
 
 
@@ -246,7 +246,7 @@ The approximate percentages are as follows:
 \end{tabular}
 \end{center}
 The base percentage-score-to-letter-grade conversion for CS 2401 is as follows: 
-\change{}{
+
 \begin{center}
 \begin{tabular}{rl}
 \textbf{90\%}& or higher is guaranteed an A \\
@@ -257,7 +257,6 @@ The base percentage-score-to-letter-grade conversion for CS 2401 is as follows:
 \end{tabular}
 \end{center}
 These minimums may be lowered without notice but will not be raised. 
-}
 
 Note: Regardless of your standing in the class at that time, you need to earn a C or better at the final exam to pass the course as well as a C or better as your average grade on the lab assignments. 
 
@@ -268,7 +267,7 @@ Note: Regardless of your standing in the class at that time, you need to earn a 
 \subsubsection{Quizzes}
 The purpose of each quiz is to ensure that students are staying current with the weekly reading assignments and to verify that they have acquired the skills developed in class. 
 Quizzes are unannounced. 
-\change{}{All quizzes will be on blackboard, and there will be no make-up on missed quizzes.} 
+All quizzes will be on blackboard, and there will be no make-up on missed quizzes.
 
 \textbf{Important note on quizzes:} 
 There will be 2 long quizzes during the semester, whose grades will count towards the HW/Quizzes/in-class assignment portion of your final grade. 
@@ -287,8 +286,8 @@ all deadlines are available in advance on your zyBooks so that you can plan ahea
 Completing the assigned activities on time will be crucial to your success in the class (since these activities prepare you for classwork and exams). 
 Reading and homework assignments to be completed on your online textbook are usually meant to familiarize you with concepts that will be covered in depth in class. 
 If you struggle in any way while working on these, it is crucial that you seek help as soon as possible.
-\change{Reading and}{Additional} homework assignments will be announced in class and/or posted on blackboard (under the Timeline section of Resources).
-If you miss a \change{lecture}{synchronous class} session, it is your responsibility to find out what you missed, including assignments that might have been given\change{ in class}.
+Additional homework assignments will be announced in class and/or posted on blackboard (under the Timeline section of Resources).
+If you miss a synchronous class session, it is your responsibility to find out what you missed, including assignments that might have been given.
 
 
 \paragraph{Online homework grade:} at each deadline, your instructor will collect your progress towards the due assignment. 
@@ -300,8 +299,8 @@ These opportunities will be clearly indicated in the list of deadlines in your o
 There are three types of extra credit opportunities: catch-up homework, review homework, extra work, and professionalism.
 \begin{itemize}
 \item Catch-up homework assignments are regularly scheduled during the semester and are meant to help you make up some of the points you may not have made by the deadline of each individual homework assignment. 
-\item Review homework: is a one-time opportunity. If you complete at least 75\% of the Review homework assignment due on \change{March 6th}{\textcolor{red}{date TBD}}, you will receive 20 extra points to count towards your online homework grade (not to exceed 100 points total).
-\item Extra work: is also a one-time opportunity. If you complete at least 80\% of the Debugging and troubleshooting homework assignment due on \change{February 15th}{\textcolor{red}{date TBD}}, you will receive 15 extra points to count towards your homework grade (not to exceed 100 points total).
+\item Review homework: is a one-time opportunity. If you complete at least 75\% of the Review homework assignment (see zyBook for due date), you will receive 20 extra points to count towards your online homework grade (not to exceed 100 points total).
+\item Extra work: is also a one-time opportunity. If you complete at least 80\% of the Debugging and troubleshooting homework assignment (see zyBook for due date), you will receive 15 extra points to count towards your homework grade (not to exceed 100 points total).
 \item Professionalism: if all online homework was consistently completed on time, an extra 100 points will be assigned to the average making up the HW/Q/IC grade.
 \end{itemize}
 
@@ -317,11 +316,11 @@ Average (Online HW grade, Quizzes grade, Long Quiz 1, Long Quiz 2, \\ other in-c
 
 Lab assignments are designed for you to further your practice on the concepts presented in class and demonstrate your level of mastery of these. 
 In lab, you will typically work on either small activities related to currently covered concepts or concepts in which your instructional team thinks you should acquire more fluency, or more substantial lab assignments. 
-Specifically, there will be \change{7 or 8 longer}{approximately one} lab assignments \change{}{per week} and a few smaller lab activities. 
+Specifically, there will be approximately one lab assignments per week and a few smaller lab activities. 
 Online homework that is specific to the lab activities will be assigned: you will notice two assignments listed on your online zyBooks are labeled “Lab HW”. 
 Your completion of these will count towards your lab grade. 
 
-\paragraph{Other activities:} in lab, once a week on most weeks, you will participate in group-work during which you will solve problems\change{ (offline: at the white board)}. 
+\paragraph{Other activities:} in lab, once a week on most weeks, you will participate in group-work during which you will solve problems. 
 You are expected to take an active part in these activities.
 
 \paragraph{Attendance and active participation:} You are expected to attend and actively participate in labs (active participation includes the weekly group activities). 
@@ -356,7 +355,7 @@ Because the exams contribute heavily to your total grade, it is vital that you d
 If you have test-taking difficulties in general, or if you have difficulties with our tests in particular, please request appropriate accommodation from UTEP’s Center for Accommodation and Students’ Services.
 
 The purpose of the midterm exams is to allow you to demonstrate mastery of course concepts covered thus far during the semester. 
-Mid-term exams will take place \change{during the regular lecture sessions}{on backboard with clear time constraints} and are tentatively scheduled to be held on week 3, week 6, week 9, and week 12. 
+Mid-term exams will take place on backboard with clear time constraints and are tentatively scheduled to be held on week 3, week 6, week 9, and week 12. 
 Make-up exams will be given only in extremely unusual circumstances. 
 If you must miss an exam, please meet with an instructor, \textit{BEFORE} the exam. 
 The average of the 4 midterm grades is worth 12\% of your overall grade for CS2401.
@@ -369,7 +368,7 @@ You must score 70\% or better on the final exam to pass this course.
 You must take the final exam during the time shown in the schedule for the lecture section that you normally attend. 
 Do not "drop in" to another section: there will not be a copy of the exam for you. 
 This is University policy. If you have a scheduling conflict (e.g., if you are taking a final at EPCC) or if you are scheduled for three final exams in one day, see your instructor at least a week in advance for arranging accommodation.
- The final exam will be held on {\color{red}XXX from XXXX}. (all final exams schedules are also available online, on the UTEP website). 
+ The final exam will be held online during exam week (all final exams schedules are also available online, on the UTEP website). 
  It is the students’ responsibility to keep informed.  The final-prep exam is worth 10\% of your overall grade. The final exam is worth 25\% of your overall grade. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -381,7 +380,7 @@ This is University policy. If you have a scheduling conflict (e.g., if you are t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{Special Assignments:} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\change{will be given to students i}{I}f deemed necessary, \change{which will need to be completed}{special assignments will be given to students} to ensure that said students remain in the class and be successful. 
+If deemed necessary, special assignments will be given to students to ensure that said students remain in the class and be successful. 
 These will be designed to help students grow into the course and develop the necessary skills.
 It is important that students feel free to ask their instructor about any such opportunity as well so that a special plan of development for CS2401 be tailored to them.
 
